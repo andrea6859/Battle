@@ -1,7 +1,11 @@
 require 'sinatra/base'
 require 'shotgun'
 
+
+
 class Battle < Sinatra::Base
+
+set :session_secret, 'super secret'
 
   get '/' do
     erb(:index)
