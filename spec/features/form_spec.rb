@@ -5,9 +5,10 @@ require 'spec_helper'
       sign_in_and_play
     end
     scenario 'submitting names' do
-      expect(page).to have_content 'Dave vs. Mittens'
+      expect(page).to have_content 'Dave'
+      expect(page).to have_content 'Mittens'
     end
     scenario 'show initial points' do
-      expect(page).to have_content '0 - 0'
+      expect(page).to have_content '60HP'
     end
   end
